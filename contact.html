@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<style>
+    body{
+        overflow: hidden;
+    }
+</style>
+    <title>Document</title>
+</head>
+<body>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html"><img src="images/home.png" alt=""> <strong> Home</strong></a></li>
+                <li><a href="work.html"><img src="images/monitor.png" alt="">Works</a></li>
+                <li><a href="resume.html"><img src="images/document.png" alt=""> Resume</a></li>
+                <li><a href="contact.html"><img src="images/notebook-of-contacts.png" alt=""> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-content">
+            <p>Get in Touch, Let's Talk Tech! <br><br>
+
+                Got a question, idea, or just want to say hello? I'm all ears! drop me a line, and let's dive 
+                into the world of tech together <br><br>                
+                 Don't hesitate; shoot me a message, and let's get the conversation started.
+                  Looking forward to connecting with you!
+                </p>
+        </div>
+        <div class="form-bar">
+        <form action="action_page.php" id="contactForm">
+            <label >Name:</label>
+            <input type="text" placeholder=" Full name" required> <br>
+            <label>Email:</label>
+            <input type="email" placeholder=" E-mail" required> <br>
+            <label for="">Message:</label><br>
+            <textarea cols="25" rows="8" placeholder=" What's on your Mind!?"></textarea>
+            <button type="button">Submit :)</button>
+        </form>
+        </div>
+        <div class="contact-bar">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/sachin-s-336315246"><img src="images/linkedin.png" alt=""></a></li>
+                <li><a href="https://wa.link/ed1gko"><img src="images/whatsapp.png" alt=""></a></li>
+                <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+            </ul><br>
+            <div class="contact-details"><p>+91 7339111229 | sachin508508@gmail.com</p></div>
+        </div>
+        
+    <div class="footer"> © Copyright 2023- Sachin Designs- All Rights Reserved </div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            alert("I appreciate you taking the time to connect with me! Your interest and message mean a lot. ");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
